@@ -1,0 +1,5 @@
+Almo�o;129.0;;Alimentação;false
+comprar mes;1200.0;;Alimentação;false
+VideoGame;2000.0;;Alimentação;false
+Playstation 5;3500.0;;Eventual;false
+Churrasco de domingo;230.0;;Alimentação;false
