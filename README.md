@@ -56,9 +56,9 @@ As senhas são criptografadas antes de serem salvas.
 
 | **Pagavel** | Interface | Define o contrato para o método `pagar()` |
 
-| **DespesaService** | Classe de serviço | Salva e lê despesas de arquivos de texto |
+| **Servicosdespesa** | Classe de serviço | Salva e lê despesas de arquivos de texto |
 
-| **UsuarioService** | Classe de serviço | Cadastra e lista usuários |
+| **ServicosUsuario** | Classe de serviço | Cadastra e lista usuários |
 
 | **Criptografia** | Utilitária | Responsável por criptografar senhas (SHA-256) |
 
