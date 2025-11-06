@@ -40,43 +40,27 @@ Lista despesas pagas ou pendentes com filtros por categoria.
 Permite cadastrar e listar usuários.
 As senhas são criptografadas antes de serem salvas.
 
-Estrutura de Classes
+## Estrutura de Classes
 
 | Classe | Tipo | Descrição |
 
 | **Main** | Principal | Gerencia o menu e controla o fluxo geral do sistema |
-| **Despesa** | Abstrata | Define os atributos e métodos base de uma despesa |
-| **Alimentacao**, **Transporte**, **DespesaEventual** | Concretas | Especializações de `Despesa` que sobrescrevem o método `exibirDetalhes()` |
-| **Usuario** | Concreta | Representa o usuário do sistema, com login e senha criptografada |
-| **TipoDespesa** | Concreta | Permite criar e gerenciar categorias personalizadas |
-| **Pagavel** | Interface | Define o contrato para o método `pagar()` |
-| **DespesaService** | Classe de serviço | Salva e lê despesas de arquivos de texto |
-| **UsuarioService** | Classe de serviço | Cadastra e lista usuários |
-| **Criptografia** | Utilitária | Responsável por criptografar senhas (SHA-256) |
 
-## Estrutura de Pastas
-SistemaControleDespesas/
-│
-├── src/
-│ ├── Main.java
-│ ├── model/
-│ │ ├── Despesa.java
-│ │ ├── Alimentacao.java
-│ │ ├── Transporte.java
-│ │ ├── DespesaEventual.java
-│ │ ├── Usuario.java
-│ │ ├── Pagavel.java
-│ │
-│ ├── servicos/
-│ │ ├── DespesaService.java
-│ │ ├── UsuarioService.java
-│ │
-│ ├── utils/
-│ │ └── Criptografia.java
-│
-├── despesas.txt
-├── usuarios.txt
-└── README.md
+| **Despesa** | Abstrata | Define os atributos e métodos base de uma despesa |
+
+| **Alimentacao**, **Transporte**, **DespesaEventual** | Concretas | Especializações de `Despesa` que sobrescrevem o método `exibirDetalhes()` |
+
+| **Usuario** | Concreta | Representa o usuário do sistema, com login e senha criptografada |
+
+| **TipoDespesa** | Concreta | Permite criar e gerenciar categorias personalizadas |
+
+| **Pagavel** | Interface | Define o contrato para o método `pagar()` |
+
+| **DespesaService** | Classe de serviço | Salva e lê despesas de arquivos de texto |
+
+| **UsuarioService** | Classe de serviço | Cadastra e lista usuários |
+
+| **Criptografia** | Utilitária | Responsável por criptografar senhas (SHA-256) |
 
 ## Documentação das Classes
 ### Classe `Despesa`
